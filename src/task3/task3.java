@@ -76,7 +76,33 @@ int productivity1Minute = machinePerformance / timePerfomance;
 
         int totalDayAverage = needWeightG / average;
         System.out.println("При похудении на " + average + " г в день не обходимо " + totalDayAverage + "дней");
+        System.out.println();
 
+
+
+        int Masha = 67760;
+        int Denis = 83690;
+        int Kristina = 76230;
+
+       double salaryBonusMasha = (Masha * 0.1) + Masha;
+      double salaryBonusDenis = (Denis * 0.1) + Denis;
+      double salaryBonusKristina = (Kristina * 0.1) + Kristina;
+
+      int yearsSalaryMasha = Masha * 12 ;
+      int yearsSalaryDenis = Denis * 12;
+      int yearsSalaryKristina = Kristina * 12;
+
+      double yearsSalaryBonusMasha = yearsSalaryMasha * 12;
+        double yearsSalaryBonusDenis = yearsSalaryDenis * 12;
+        double yearsSalaryBonusKristina = yearsSalaryKristina * 12;
+
+        double salaryDifferenceMasha = yearsSalaryBonusMasha - yearsSalaryMasha;
+        double salaryDifferenceDenis = yearsSalaryBonusDenis - yearsSalaryDenis;
+        double salaryDifferenceKristina = yearsSalaryBonusKristina - yearsSalaryKristina;
+
+        System.out.println( "Маша теперь получает " +yearsSalaryMasha + "рублей. Годовой доход вырос на " + salaryDifferenceMasha +" рублей");
+        System.out.println( "Денис теперь получает " +yearsSalaryDenis + "рублей. Годовой доход вырос на " + salaryDifferenceDenis +" рублей");
+        System.out.println( "Кристина теперь получает " +yearsSalaryKristina + "рублей. Годовой доход вырос на " + salaryDifferenceKristina +" рублей");
 
 }
     }
