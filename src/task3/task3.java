@@ -49,6 +49,33 @@ int productivity1Minute = machinePerformance / timePerfomance;
 
         System.out.println( "В школе, где " +  totalClass + " классов, нужно " + totalWhiteCase + " банок белой краски и "
                 + totalBrounCase + " банок коричневой краски");
+        System.out.println();
+
+        int weightOneBanan = 80;
+        int weight100mlMilk = 105;
+        int weightOneBriket = 100;
+        int weihgOneEgg = 70;
+
+        int weightKoktel = (weightOneBanan * 5) + (weight100mlMilk * 2) + (weightOneBriket * 2 ) + (weihgOneEgg * 4);
+        float kg = 1000f;
+        float weightKg = weightKoktel / kg;
+        System.out.println("Вес коктейля в киллограммах " + weightKg);
+        System.out.println();
+
+        int needWeight = 7;
+        int needWeightG = needWeight * 1000;
+        int minWeightLoss = 250;
+        int maxWeightLoss = 500;
+        int totalDay250 = needWeightG / minWeightLoss;
+        System.out.println("При похудении на 250 г в день не обходимо " + totalDay250 + "дней");
+
+        int totalDay500 = needWeightG / maxWeightLoss;
+        System.out.println("При похудении на 500 г в день не обходимо " + totalDay500 + "дней");
+
+        int average = (minWeightLoss + maxWeightLoss) / 2;
+
+        int totalDayAverage = needWeightG / average;
+        System.out.println("При похудении на " + average + " г в день не обходимо " + totalDayAverage + "дней");
 
 
 }
